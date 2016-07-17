@@ -4,7 +4,7 @@ var React = require("react");
 
 var AuthorList = React.createClass({
   propTypes: {
-    autors: React.PropTypes.array.isRequired
+    authors: React.PropTypes.array.isRequired
   },
 
   render: function() {
