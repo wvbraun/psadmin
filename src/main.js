@@ -4,6 +4,7 @@ var React = require("react");
 var Home = require("./components/homePage");
 var About = require("./components/about/aboutPage");
 var Header = require("./components/common/header");
+var Authors = require("./components/authors/authorPage");
 
 
 // one way to route (best way is w/ react-router)
@@ -15,6 +16,9 @@ var Header = require("./components/common/header");
       switch (this.props.route) {
         case "about":
           Child = About;
+          break;
+        case "authors":
+          Child = Authors;
           break;
         default:
           Child = Home;
